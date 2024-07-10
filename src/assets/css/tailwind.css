@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/** Local Variables Design Tokens  */
+:root {
+    --page-paddingX: 16px;
+    --page-paddingY: 16px;
+    --page-gap: 12px;
+    --layout-course-gap: 16px;
+    --hero-paddingY: 12px;
+}
+
+@screen md {
+    :root {
+        --page-paddingX: 64px;
+        --page-paddingY: 32px;
+        --layout-course-gap: 36px;
+        --hero-paddingY: 12px;
+    }
+}
+
+@screen xl {
+    :root {
+        --page-paddingX: 0px;
+        --page-paddingY: 32px;
+        --layout-course-gap: 36px;
+        --hero-paddingY: 24px;
+    }
+}
+
+/** Typography Design Tokens */
+@layer components {
+    /* .text-hero {
+        @apply font-sans text-[32px] font-bold not-italic leading-[150%] xl:text-[48px];
+    } */
+
+    .text-sub-header {
+        @apply font-sans text-[18px] font-bold not-italic leading-[150%];
+    }
+}
